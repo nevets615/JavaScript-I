@@ -18,21 +18,35 @@ const example = {
 }
 
 // Write your intern objects here:
+
 const intern = {
-  name: "Mitzi,F",
-  email: "mmelloy0@psu.edu",
-};
+  id: ["1", "2" , "3" , "4" , "5"],
+  name: ["Mitzi,F", "Kennan,M" , "Keven,M" , "Gannie,M" , "Antonietta,F"],
+  email:["mmelloy0@psu.edu","kdiben1@tinypic.com" , "kmummery2@wikimedia.org" , "gmartinson3@illinois.edu" , "adaine5@samsung.com"], 
+  gender: ["F" , "M" , "M" , "M" , "F"] ,
+  hello: function(){
+    console.log(`Hello, my name is ${this.name[1]}`);
+    },
+    multiplyNums: function(x,y){
+      console.log(x*y);
+      console.log(antonietta.multiplyNums(3,4));
+      },
+
+  };
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
+console.log(intern.name[0]);
 // Mitzi's name
-
+console.log(intern.id[1]);
 // Kennan's ID
-
+console.log(intern.email[2]);
 // Keven's email
-
+console.log(intern.name[3]);
 // Gannie's name
+console.log(intern.gender[4]);
 
 // Antonietta's Gender
 
